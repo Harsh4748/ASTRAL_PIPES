@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Astral Pipes - India's leading manufacturer of high-quality CPVC, PVC, and agricultural pipes, water storage tanks, and innovative drainage solutions.">
+  <title>Astral Pipes | Premium Piping & Water Storage Solutions</title>
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header id="main-header" class="glass-header">
+    <div class="container nav-container">
+      <a href="#" class="logo-area" aria-label="Astral Pipes Home">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 100 100" class="logo-svg">
+            <!-- Intersecting pipes representing fluid flow and strength -->
+            <path d="M20,50 L80,50" stroke="url(#logo-grad-red)" stroke-width="14" stroke-linecap="round" />
+            <path d="M50,20 L50,80" stroke="url(#logo-grad-blue)" stroke-width="14" stroke-linecap="round" />
+            <circle cx="50" cy="50" r="12" fill="#0f172a" stroke="#fff" stroke-width="3" />
+            <defs>
+              <linearGradient id="logo-grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0a4b87" />
+                <stop offset="100%" stop-color="#1e293b" />
+              </linearGradient>
+              <linearGradient id="logo-grad-red" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ef4444" />
+                <stop offset="100%" stop-color="#b91c1c" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">ASTRAL<span class="logo-sub">PIPES</span></span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li class="dropdown-trigger">
+            <a href="#products" class="nav-link">Products 
+              <svg class="dropdown-chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z" fill="currentColor"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <div class="dropdown-grid">
+                <div class="dropdown-col">
+                  <h3>Plumbing & Building</h3>
+                  <a href="#products" data-filter="plumbing">CPVC Pro (Hot & Cold)</a>
+                  <a href="#products" data-filter="plumbing">uPVC Aquanom</a>
+                  <a href="#products" data-filter="plumbing">PEX-a Pro</a>
+                </div>
+                <div class="dropdown-col">
+                  <h3>Drainage & Sewerage</h3>
+                  <a href="#products" data-filter="drainage">Silencio Low-Noise</a>
+                  <a href="#products" data-filter="drainage">DrainMaster</a>
+                  <a href="#products" data-filter="drainage">Foamcore PVC</a>
+                </div>
+                <div class="dropdown-col">
+                  <h3>Industrial & Agriculture</h3>
+                  <a href="#products" data-filter="industrial">Chem Pro Industrial</a>
+                  <a href="#products" data-filter="agri">Borewell Column Pipes</a>
+                  <a href="#products" data-filter="agri">Drip & Sprinkler</a>
+                </div>
+                <div class="dropdown-col">
+                  <h3>Specialty & Storage</h3>
+                  <a href="#products" data-filter="tanks">Cleo Water Tanks (Copper Shield)</a>
+                  <a href="#products" data-filter="conduit">Wire Guard Electrical Conduits</a>
+                  <a href="#products" data-filter="fire">Fire Pro CPVC Sprinklers</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="#calculator" class="nav-link">Flow Calculator</a></li>
+          <li><a href="#dealer-locator" class="nav-link">Dealer Locator</a></li>
+          <li><a href="#about" class="nav-link">Why Astral</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Get Consultation</a>
+        <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav">
+    <nav class="mobile-nav-menu" aria-label="Mobile Navigation">
+      <ul class="mobile-links">
+        <li><a href="#" class="mobile-link">Home</a></li>
+        <li><a href="#products" class="mobile-link">Products</a></li>
+        <li><a href="#calculator" class="mobile-link">Flow Calculator</a></li>
+        <li><a href="#dealer-locator" class="mobile-link">Dealer Locator</a></li>
+        <li><a href="#about" class="mobile-link">Why Astral</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-cta">
+        <a href="#contact" class="btn btn-primary">Get Consultation</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Slider Section -->
+  <section class="hero-slider-section" id="home">
+    <div class="slider-container" id="hero-slider">
+      <!-- Slide 1: Plumbing -->
+      <div class="slide active" data-theme="plumbing">
+        <div class="slide-bg" style="background: radial-gradient(circle at 70% 30%, #1e3a8a 0%, #020617 80%);"></div>
+        <div class="container slide-grid">
+          <div class="slide-content animate-up">
+            <span class="slide-tag">PLUMBING SYSTEMS</span>
+            <h1 class="slide-title">ASTRAL <span class="text-highlight">CPVC PRO</span></h1>
+            <p class="slide-desc">The Gold Standard in hot and cold water plumbing. Engineered with advanced CPVC technology for exceptional durability, chlorine resistance, and 100% lead-free water flow.</p>
+            <div class="slide-actions">
+              <a href="#products" class="btn btn-primary">Explore CPVC Pro</a>
+              <a href="#calculator" class="btn btn-outline">Check Pipe Sizes</a>
+            </div>
+          </div>
+          <div class="slide-visual animate-fade">
+            <!-- Styled Pipe Graphics -->
+            <div class="pipe-render plumbing-pipe">
+              <div class="pipe-tube main-pipe"></div>
+              <div class="pipe-fitting tee-fitting"></div>
+              <div class="pipe-stripe"></div>
+            </div>
+            <!-- Decorative light effects -->
+            <div class="glow-orb blue-glow"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Drainage -->
+      <div class="slide" data-theme="drainage">
+        <div class="slide-bg" style="background: radial-gradient(circle at 70% 30%, #0f766e 0%, #020617 80%);"></div>
+        <div class="container slide-grid">
+          <div class="slide-content">
+            <span class="slide-tag">SILENT DRAINAGE</span>
+            <h2 class="slide-title">ASTRAL <span class="text-highlight-teal">SILENCIO</span></h2>
+            <p class="slide-desc">Ultra-quiet low-noise drainage systems. Specially formulated mineral-reinforced polypropylene structure reduces acoustic vibrations down to a whispering 12 decibels.</p>
+            <div class="slide-actions">
+              <a href="#products" class="btn btn-teal">Discover Quiet</a>
+              <a href="#contact" class="btn btn-outline">Download Catalog</a>
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="pipe-render drainage-pipe">
+              <div class="pipe-tube gray-pipe"></div>
+              <div class="pipe-fitting coupler-fitting"></div>
+              <div class="db-indicator">12<span>dB</span></div>
+            </div>
+            <div class="sound-wave">
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+            </div>
+            <div class="glow-orb teal-glow"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Water Tanks -->
+      <div class="slide" data-theme="tanks">
+        <div class="slide-bg" style="background: radial-gradient(circle at 70% 30%, #065f46 0%, #020617 80%);"></div>
+        <div class="container slide-grid">
+          <div class="slide-content">
+            <span class="slide-tag">WATER STORAGE</span>
+            <h2 class="slide-title">ASTRAL <span class="text-highlight-emerald">CLEO</span></h2>
+            <p class="slide-desc">Next-generation multi-layer water storage tanks infused with active Copper-Shield technology. Continuously neutralizes bacteria, viruses, and algae for pure, pristine water.</p>
+            <div class="slide-actions">
+              <a href="#products" class="btn btn-emerald">View Water Tanks</a>
+              <a href="#contact" class="btn btn-outline">Get Dealer Pricing</a>
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="tank-render">
+              <div class="tank-body">
+                <div class="tank-ridge"></div>
+                <div class="tank-ridge"></div>
+                <div class="tank-ridge"></div>
+                <div class="tank-badge">
+                  <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" fill="#059669"/></svg>
+                  <span>COPPER SHIELD</span>
+                </div>
+              </div>
+            </div>
+            <div class="glow-orb emerald-glow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider Navigation Controls -->
+    <div class="slider-controls">
+      <button class="slider-arrow prev" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="currentColor"/></svg>
+      </button>
+      <div class="slider-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+      <button class="slider-arrow next" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
+          </div>
+          <p class="stat-label">Years of Legacy</p>
+        </div>
+        
+        <div class="stat-card reveal-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="15000">0</span><span class="stat-plus">+</span>
+          </div>
+          <p class="stat-label">Dealers & Retailers</p>
+        </div>
+
+        <div class="stat-card reveal-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="5000">0</span><span class="stat-plus">+</span>
+          </div>
+          <p class="stat-label">Products SKU</p>
+        </div>
+
+        <div class="stat-card reveal-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="12">0</span><span class="stat-plus">+</span>
+          </div>
+          <p class="stat-label">Production Plants</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Catalogue Section -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="section-tag">OUR CATALOG</span>
+        <h2 class="section-title">Pioneering Piping Technologies</h2>
+        <p class="section-subtitle">Astral offers a wide range of specialized piping systems and water solutions for residential, commercial, industrial, agricultural, and infrastructure needs.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs reveal-item">
+        <button class="filter-tab active" data-filter="all">All Solutions</button>
+        <button class="filter-tab" data-filter="plumbing">Plumbing</button>
+        <button class="filter-tab" data-filter="drainage">Drainage</button>
+        <button class="filter-tab" data-filter="agri">Agriculture</button>
+        <button class="filter-tab" data-filter="industrial">Industrial</button>
+        <button class="filter-tab" data-filter="tanks">Water Tanks</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid">
+        <!-- CPVC Pro -->
+        <div class="product-card reveal-item" data-category="plumbing">
+          <div class="product-badge red-badge">Best Seller</div>
+          <div class="product-preview">
+            <div class="pipe-mini plumbing-mini">
+              <div class="mini-tube blue-tint"></div>
+              <div class="mini-fitting"></div>
+              <div class="mini-stripe red-stripe"></div>
+            </div>
+          </div>
+          <div class="product-body">
+            <h3>CPVC PRO Hot & Cold</h3>
+            <p>Class-leading CPVC piping system designed for service temperatures up to 93°C. Excellent chemical corrosion resistance.</p>
+            <button class="btn-text learn-more-btn" data-product="cpvc-pro">Explore Technical Specs 
+              <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill="currentColor"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Silencio -->
+        <div class="product-card reveal-item" data-category="drainage">
+          <div class="product-badge teal-badge">Innovation</div>
+          <div class="product-preview">
+            <div class="pipe-mini drainage-mini">
+              <div class="mini-tube gray-dark"></div>
+              <div class="mini-fitting-drain"></div>
+            </div>
+          </div>
+          <div class="product-body">
+            <h3>Silencio Low Noise</h3>
+            <p>Co-extruded mineral reinforced acoustic piping system. Eliminates sound generated by flushing wastewater.</p>
+            <button class="btn-text learn-more-btn" data-product="silencio">Explore Technical Specs 
+              <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill="currentColor"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Chem Pro -->
+        <div class="product-card reveal-item" data-category="industrial">
+          <div class="product-preview">
+            <div class="pipe-mini industrial-mini">
+              <div class="mini-tube industrial-dark"></div>
+              <div class="mini-valve">
+                <div class="valve-wheel"></div>
+              </div>
+            </div>
+          </div>
+          <div class="product-body">
+            <h3>Chem Pro Industrial</h3>
+            <p>Heavy-duty CPVC & PVC systems for aggressive chemicals, acids, and high-pressure industrial fluids.</p>
+            <button class="btn-text learn-more-btn" data-product="chem-pro">Explore Technical Specs 
+              <svg viewBox="0 0 24 24" width="16" height="16"><pathd="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill="currentColor"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Borewell Column -->
+        <div class="product-card reveal-item" data-category="agri">
+          <div class="product-preview">
+            <div class="pipe-mini agri-mini">
+              <div class="mini-tube blue-medium"></div>
+              <div class="mini-threads"></div>
+            </div>
+          </div>
+          <div class="product-body">
+            <h3>Borewell Column Pipes</h3>
+            <p>Highly robust uPVC column pipes with leak-proof coupler locks for deep submersible water extraction.</p>
+            <button class="btn-text learn-more-btn" data-product="column-pipes">Explore Technical Specs 
+              <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill="currentColor"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Cleo Tank -->
+        <div class="product-card reveal-item" data-category="tanks">
+          <div class="product-badge emerald-badge">Copper Shield</div>
+          <div class="product-preview">
+            <div class="tank-mini">
+              <div class="mini-tank-body">
+                <div class="mini-tank-ridge"></div>
+                <div class="mini-tank-badge">Cu</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-body">
+            <h3>Cleo Water Storage</h3>
+            <p>Premium multi-layer storage tanks featuring high-density food grade polymers and active anti-bacterial barriers.</p>
+            <button class="btn-text learn-more-btn" data-product="cleo-tanks">Explore Technical Specs 
+              <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill="currentColor"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Aquanom -->
+        <div class="product-card reveal-item" data-category="plumbing">
+          <div class="product-preview">
+            <div class="pipe-mini aquanom-mini">
+              <div class="mini-tube blue-light"></div>
+              <div class="mini-fitting"></div>
+            </div>
+          </div>
+          <div class="product-body">
+            <h3>uPVC Aquanom Pressure</h3>
+            <p>Lead-free uPVC plumbing system for distribution of cold potable water under high pressure conditions.</p>
+            <button class="btn-text learn-more-btn" data-product="aquanom">Explore Technical Specs 
+              <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill="currentColor"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Spec Modal -->
+  <div class="modal-overlay" id="product-modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="currentColor"/></svg>
+      </button>
+      <div class="modal-grid" id="modal-details">
+        <!-- Injected dynamically by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Hydraulic Flow Calculator Section -->
+  <section class="calculator-section" id="calculator">
+    <div class="container">
+      <div class="calculator-grid">
+        <div class="calculator-info reveal-item">
+          <span class="section-tag">ENGINEERING UTILITY</span>
+          <h2 class="section-title">Hydraulic Pipe Sizing & Flow Velocity Calculator</h2>
+          <p>This professional engineering tool calculates water velocity and estimated pressure loss (head loss) based on pipe materials, sizes, and volumetric flow rates. High velocity triggers pipe erosion, while low velocity can cause particulate settlement.</p>
+          
+          <div class="calc-guide">
+            <div class="guide-item">
+              <span class="guide-dot red"></span>
+              <div>
+                <strong>High Erosion Hazard (&gt; 2.5 m/s):</strong> Velocity too high. Promotes rapid friction erosion and dangerous water hammer pressures.
+              </div>
+            </div>
+            <div class="guide-item">
+              <span class="guide-dot green"></span>
+              <div>
+                <strong>Optimal Flow Range (1.0 - 2.5 m/s):</strong> Perfectly balanced flow velocity for residential and commercial supply.
+              </div>
+            </div>
+            <div class="guide-item">
+              <span class="guide-dot blue"></span>
+              <div>
+                <strong>Low Velocity Sedimentation (&lt; 1.0 m/s):</strong> Velocity too low. Risk of debris deposition and stagnation in gravity systems.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator-card reveal-item">
+          <h3>Hydraulic Parameter Inputs</h3>
+          
+          <div class="control-group">
+            <label for="calc-material">Pipe Material Selection</label>
+            <select id="calc-material" class="form-select">
+              <option value="cpvc" data-roughness="150" selected>Astral CPVC Pro (C = 150)</option>
+              <option value="upvc" data-roughness="150">Astral uPVC Aquanom (C = 150)</option>
+              <option value="hdpe" data-roughness="140">Astral HDPE Infrastructure (C = 140)</option>
+              <option value="steel" data-roughness="100">Galvanized Steel Pipe (C = 100)</option>
+            </select>
+          </div>
+
+          <div class="control-row">
+            <div class="control-group half-width">
+              <label for="calc-size">Nominal Bore Size</label>
+              <select id="calc-size" class="form-select">
+                <option value="15" selected>1/2" (15mm NB / ID: 14.8mm)</option>
+                <option value="20">3/4" (20mm NB / ID: 19.8mm)</option>
+                <option value="25">1" (25mm NB / ID: 25.6mm)</option>
+                <option value="32">1-1/4" (32mm NB / ID: 32.8mm)</option>
+                <option value="40">1-1/2" (40mm NB / ID: 38.6mm)</option>
+                <option value="50">2" (50mm NB / ID: 48.6mm)</option>
+                <option value="80">3" (80mm NB / ID: 73.7mm)</option>
+                <option value="100">4" (100mm NB / ID: 97.2mm)</option>
+              </select>
+            </div>
+            
+            <div class="control-group half-width">
+              <label for="calc-length">Pipe Length (Meters)</label>
+              <input type="number" id="calc-length" class="form-input" min="1" max="1000" value="30">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <div class="slider-label-row">
+              <label for="calc-flow">Volumetric Flow Rate</label>
+              <span class="value-display"><span id="flow-val">30</span> LPM</span>
+            </div>
+            <input type="range" id="calc-flow" class="form-range" min="1" max="300" step="1" value="30">
+          </div>
+
+          <!-- Live Output Gauges -->
+          <div class="calculator-outputs">
+            <div class="output-gauge">
+              <span class="output-label">Flow Velocity</span>
+              <div class="gauge-display" id="velocity-gauge">
+                <span class="gauge-value" id="out-velocity">2.89</span> <span class="gauge-unit">m/s</span>
+              </div>
+              <div class="velocity-status-badge" id="velocity-status">Warning: High Velocity</div>
+            </div>
+
+            <div class="output-gauge">
+              <span class="output-label">Estimated Head Loss</span>
+              <div class="gauge-display highlight">
+                <span class="gauge-value" id="out-headloss">1.45</span> <span class="gauge-unit">meters</span>
+              </div>
+              <span class="output-subtext">Hazen-Williams calculation for <span id="out-len">30</span>m run</span>
+            </div>
+          </div>
+
+          <div class="pressure-drop-result">
+            <span>Equivalent Pressure Drop:</span>
+            <strong id="out-pressure">0.14 bar (2.06 psi)</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Innovation Showcase Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal-item">
+          <!-- Glassmorphic card overlay displaying technical innovations -->
+          <div class="tech-card">
+            <div class="tech-card-header">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" fill="none" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <h4>Active Copper Shield</h4>
+            </div>
+            <p>Standard PVC allows biolayers to feed pathogens. Cleo Water Storage tanks incorporate active Cu+ ions into their inner food-grade matrix, destroying 99.9% of microbes instantly upon contact.</p>
+            <div class="tech-stats">
+              <div class="t-stat">
+                <strong>99.9%</strong>
+                <span>Antibacterial</span>
+              </div>
+              <div class="t-stat">
+                <strong>6 Layers</strong>
+                <span>UV Protection</span>
+              </div>
+            </div>
+          </div>
+          <!-- Decorative circles -->
+          <div class="circle-decor circle-1"></div>
+          <div class="circle-decor circle-2"></div>
+        </div>
+
+        <div class="about-content reveal-item">
+          <span class="section-tag">WHY CHOOSE ASTRAL?</span>
+          <h2 class="section-title">Setting the Standards of Fluid Management</h2>
+          <p class="about-text">
+            For decades, Astral has pushed boundaries in piping infrastructure. From introducing the first lead-free uPVC plumbing systems in India to engineering the lowest noise-decibel drainage systems available, our focus remains on reliability, safety, and performance.
+          </p>
+          <ul class="features-list">
+            <li>
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>100% Lead-Free Formulations</strong>
+                <p>All plumbing products are certified lead-free, safeguarding public health and eco-habitats.</p>
+              </div>
+            </li>
+            <li>
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>High Impact Strength & Ductility</strong>
+                <p>Engineered to absorb hydraulic surges and expansion without cracking or micro-fracturing.</p>
+              </div>
+            </li>
+            <li>
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Easy Jointing & Fast Installation</strong>
+                <p>Specially developed solvent cements and tight-toleranced fittings cut installation time by 50%.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Dealer Locator Section -->
+  <section class="dealer-locator-section" id="dealer-locator">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="section-tag">NETWORK</span>
+        <h2 class="section-title">Locate Your Nearest Astral Dealer</h2>
+        <p class="section-subtitle">Connect with our authorized stockists and certified distributors across India for genuine parts and engineering consultation.</p>
+      </div>
+
+      <div class="dealer-locator-grid">
+        <div class="dealer-search reveal-item">
+          <h3>Filter Location</h3>
+          <div class="control-group">
+            <label for="state-select">Select State</label>
+            <select id="state-select" class="form-select">
+              <option value="">-- Choose State --</option>
+              <option value="gujarat">Gujarat</option>
+              <option value="maharashtra">Maharashtra</option>
+              <option value="karnataka">Karnataka</option>
+              <option value="delhi">Delhi</option>
+              <option value="tamilnadu">Tamil Nadu</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <label for="city-select">Select City</label>
+            <select id="city-select" class="form-select" disabled>
+              <option value="">-- Choose City --</option>
+            </select>
+          </div>
+
+          <div class="dealers-list-wrapper">
+            <h4>Authorized Dealers (<span id="dealer-count">0</span> found)</h4>
+            <div class="dealers-list" id="dealers-container">
+              <div class="dealers-placeholder">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="11" r="3"/><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/></svg>
+                <p>Select your state and city to view regional distributors and premium stockists.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dealer-map reveal-item">
+          <!-- Animated and interactive SVG mockup map, simulating dealer locations -->
+          <div class="map-mockup" id="map-mockup">
+            <div class="map-inner">
+              <svg viewBox="0 0 400 450" class="india-map-vector">
+                <!-- Abstract India Shape -->
+                <path d="M200 40 L210 50 L230 65 L240 68 L260 70 L280 80 L300 70 L305 85 L285 105 L290 120 L305 130 L310 160 L320 170 L300 175 L280 160 L270 170 L250 165 L245 175 L248 185 L255 190 L260 210 L280 230 L270 240 L290 260 L280 270 L270 265 L260 280 L250 300 L240 310 L220 330 L210 360 L200 400 L195 410 L190 400 L180 370 L170 330 L168 310 L160 290 L162 260 L158 240 L150 215 L145 180 L135 175 L125 180 L115 170 L105 160 L95 155 L90 140 L105 135 L120 140 L130 130 L140 125 L142 110 L150 100 L165 95 L175 90 L180 75 Z" fill="#1e293b" stroke="#334155" stroke-width="2" />
+                <!-- Dynamic Map Pins -->
+                <g id="map-pins"></g>
+              </svg>
+              <div class="map-legend">
+                <span class="legend-dot pins-active"></span>
+                <span>Active Stockist</span>
+              </div>
+            </div>
+            <!-- Glassmorphism Map Overlay Card (Details of selected pin) -->
+            <div class="map-overlay-card" id="map-overlay">
+              <h4 id="overlay-name">Astral Regional HQ</h4>
+              <p id="overlay-addr">Ahmedabad, Gujarat</p>
+              <a href="tel:+917926868" id="overlay-tel" class="btn btn-xs btn-primary">Call Dealer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal-item">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2 class="section-title">Submit a Technical Inquiry</h2>
+          <p>Whether you require pressure drop sheets, hydraulic CAD layout advice, or stock volume pricing, our technical team will contact you within 24 business hours.</p>
+          
+          <div class="info-blocks">
+            <div class="info-block">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <h4>Phone Support</h4>
+                <p>+91 (0) 79 2658 1234</p>
+              </div>
+            </div>
+            <div class="info-block">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div>
+                <h4>General & Technical Mail</h4>
+                <p>info@astralpipes-mock.com</p>
+              </div>
+            </div>
+            <div class="info-block">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <h4>Corporate Headquarters</h4>
+                <p>"Astral House", 207/1, Mithakhali Six Roads, Ahmedabad, Gujarat - 380006</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card reveal-item">
+          <h3>Inquiry Form</h3>
+          <form id="inquiry-form" class="premium-form">
+            <div class="form-row">
+              <div class="form-group half-width">
+                <input type="text" id="form-name" class="form-input" placeholder=" " required>
+                <label for="form-name" class="floating-label">Full Name</label>
+              </div>
+              <div class="form-group half-width">
+                <input type="email" id="form-email" class="form-input" placeholder=" " required>
+                <label for="form-email" class="floating-label">Email Address</label>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group half-width">
+                <input type="tel" id="form-phone" class="form-input" placeholder=" ">
+                <label for="form-phone" class="floating-label">Phone Number</label>
+              </div>
+              <div class="form-group half-width">
+                <select id="form-interest" class="form-select-floating" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="plumbing">Plumbing Pipes & Fittings</option>
+                  <option value="drainage">Low-Noise Drainage</option>
+                  <option value="agri">Agriculture Column & Drip</option>
+                  <option value="industrial">Industrial Chemical Piping</option>
+                  <option value="tanks">Water Storage Tanks</option>
+                  <option value="other">Other / General Inquiry</option>
+                </select>
+                <label for="form-interest" class="floating-label select-label">Product Interest</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <textarea id="form-message" class="form-textarea" placeholder=" " rows="4" required></textarea>
+              <label for="form-message" class="floating-label">Inquiry Message</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Send Secure Message
+              <svg viewBox="0 0 24 24" width="20" height="20" class="btn-arrow"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor"/></svg>
+            </button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-area">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 100 100" class="logo-svg">
+                <path d="M20,50 L80,50" stroke="#ef4444" stroke-width="14" stroke-linecap="round" />
+                <path d="M50,20 L50,80" stroke="#0a4b87" stroke-width="14" stroke-linecap="round" />
+                <circle cx="50" cy="50" r="12" fill="#0f172a" stroke="#fff" stroke-width="3" />
+              </svg>
+            </div>
+            <span class="logo-text text-white">ASTRAL<span class="logo-sub">PIPES</span></span>
+          </div>
+          <p class="footer-desc">Pioneering water conveyance technologies, drainage systems, infrastructure pipes, and antimicrobial water tanks with robust quality controls.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#products" data-filter="plumbing">CPVC Plumbing Systems</a></li>
+            <li><a href="#products" data-filter="drainage">Low-Noise SWR Drainage</a></li>
+            <li><a href="#products" data-filter="agri">Agriculture Column Pipes</a></li>
+            <li><a href="#products" data-filter="industrial">Chem Pro Industrial</a></li>
+            <li><a href="#products" data-filter="tanks">Water Storage Tanks</a></li>
+            <li><a href="#products" data-filter="conduit">Wire Guard Conduits</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Calculators & Utilities</h3>
+          <ul>
+            <li><a href="#calculator">Hydraulic Flow Sizer</a></li>
+            <li><a href="#calculator">Friction Drop Estimator</a></li>
+            <li><a href="#dealer-locator">Dealer & Distributor Map</a></li>
+            <li><a href="#about">Innovations & Technology</a></li>
+            <li><a href="#contact">Request Spec Sheets</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Corporate Office</h3>
+          <p class="text-sm">Astral Ltd.</p>
+          <p class="text-sm text-gray">Mithakhali Six Roads, Ahmedabad, Gujarat 380006</p>
+          <p class="text-sm">Phone: +91 79 2658 1234</p>
+          <p class="text-sm">Email: info@astralpipes.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Astral Pipes Mock Project. All rights reserved. Created for demonstration purposes.</p>
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script File -->
+  <script src="main.js"></script>
+</body>
+</html>
